@@ -7,14 +7,14 @@ the new files as truth.
 | | path |
 |---|---|
 | new product | `/home/meso/data/icechip-hailsonde-data/v2026/<yyyymmdd>/<category>/<stem>.alt.csv` |
-| original | `/home/meso/data/icechip-hailsonde-data/original/<category>/[<yyyymmdd>/]<stem>.raw_history.csv` |
+| original | `/home/meso/data/icechip-hailsonde-data/v2025/<category>/[<yyyymmdd>/]<stem>.raw_history.csv` |
 
 The two trees are organised differently (v2026 nests category under date;
-`original/updraft` nests date under category and `original/proximity` is flat),
+`v2025/updraft` nests date under category and `v2025/proximity` is flat),
 so soundings are paired on their **stem** (`date_time_sondeid`), which is unique
 across the campaign, and merged on the UTC time stamp rather than by row order.
 
-**Coverage:** 65 v2026 soundings, 62 with an original counterpart, 61 with
+**Coverage:** 65 v2026 soundings, 62 with an v2025 counterpart, 61 with
 enough usable GPS to score — **87,478 samples, 8,675 QC-passed GPS fixes**.
 No reference exists for `2025-05-18_2314_15297_merged`,
 `2025-05-23_1633_15331_merged` or `2025-05-29_2136_15306`;
