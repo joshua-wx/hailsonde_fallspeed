@@ -1,4 +1,4 @@
-# Sparv altitude / rise-speed update — validation against GPS
+## Sparv altitude / rise-speed update — validation against GPS
 
 Compares the **new** Sparv retrieval against the **original** software across the
 whole ICECHIP campaign, using the **GPS altitude and GPS rise speed** carried in
@@ -17,7 +17,9 @@ across the campaign, and merged on the UTC time stamp rather than by row order.
 **Coverage:** 65 v2026 soundings, 62 with an v2025 counterpart, 61 with
 enough usable GPS to score — **87,478 samples, 8,675 QC-passed GPS fixes**.
 
-## Buoyancy and drag
+# Air Speed calculation
+
+## Ascent: Buoyancy and drag
 
 From `w_air_ascent_wbuoy_method.ipynb`.  20 g balloon, 0.60 m launch diameter, in two payload versions
 identified by the sonde ID in the filename stem: **v1** (id < 15312) carries 25 g, **v2**
@@ -35,7 +37,7 @@ identified by the sonde ID in the filename stem: **v1** (id < 15312) carries 25 
 
 The observed ascent rate cannot be used due to contamination from vertical ascent in the inflow layer, so the w_buoy technique must be used. Ideally we need to measure the balloon bouyancy before launch.
 
-## Detached-sonde fall speed
+## Descent: Detached-sonde fall speed
 
 From `vt_detached.ipynb`, at a reference density ρ_ref = 1.041 kg/m³:
 
